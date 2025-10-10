@@ -140,8 +140,8 @@ vim.keymap.set("n", "<F3>", ":Neotree toggle=true<CR>")
 
 -- mini.nvim
 -- Text editing
-require('mini.ai').setup()
-require('mini.keymap').setup()
+-- require('mini.ai').setup()
+-- require('mini.keymap').setup()
 require('mini.operators').setup()
 require('mini.pairs').setup()
 require('mini.surround').setup()

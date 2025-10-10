@@ -64,5 +64,7 @@ return {
         ---@module "ibl"
         ---@type ibl.config
         opts = {},
-    }
+    },
+
+    { "ThePrimeagen/vim-be-good" },
 }
