@@ -49,13 +49,11 @@ vim.keymap.set("", "<C-k>", "<C-W>k")
 vim.keymap.set("", "<C-h>", "<C-W>h")
 vim.keymap.set("", "<C-l>", "<C-W>l")
 
-vim.keymap.set("", "<leader>tc", vim.cmd.bdelete)
-vim.keymap.set("", "<leader>tn", ":tabnew<CR>:tabclose<CR>")
+vim.keymap.set("", "<leader>tc", function() vim.cmd.bdelete {bang = true} end)
+vim.keymap.set("", "<leader>tn", ":e ~/buffer<CR>")
+vim.keymap.set("", "<leader>x", ":e ~/buffer.md<CR>")
 
 vim.keymap.set("", "<leader>cd", ":cd %:p:h<CR>:pwd<CR>")
-
-vim.keymap.set("", "<leader>q", ":e ~/buffer<CR>")
-vim.keymap.set("", "<leader>x", ":e ~/buffer.md<CR>")
 
 vim.cmd([[au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif]])
 
