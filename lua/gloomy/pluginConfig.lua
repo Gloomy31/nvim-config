@@ -178,3 +178,11 @@ require('livepreview.config').set({
 })
 vim.keymap.set("n", "<F6>", ":LivePreview start<CR>")
 vim.keymap.set("n", "<F7>", ":LivePreview close<CR>")
+
+
+-- Mason.nvim/LSPs from Mason
+require("mason").setup()
+vim.lsp.enable('html')
+vim.lsp.enable('cssls')
+vim.lsp.enable('ts_ls')
+vim.lsp.enable("jdtls")

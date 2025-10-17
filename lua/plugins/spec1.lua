@@ -43,8 +43,8 @@ return {
         keys = {
             { "<leader>tp", "<Cmd>BufferLineTogglePin<CR>", desc = "Toggle Pin" },
             { "<leader>tP", "<Cmd>BufferLineGroupClose ungrouped<CR>", desc = "Delete Non-Pinned Buffers" },
-            { "<leader>tk", "<Cmd>BufferLineCloseRight<CR>", desc = "Delete Buffers to the Right" },
-            { "<leader>tj", "<Cmd>BufferLineCloseLeft<CR>", desc = "Delete Buffers to the Left" },
+            { "<leader>tl", "<Cmd>BufferLineCloseRight<CR>", desc = "Delete Buffers to the Right" },
+            { "<leader>th", "<Cmd>BufferLineCloseLeft<CR>", desc = "Delete Buffers to the Left" },
             { "<S-tab>", "<cmd>BufferLineCyclePrev<cr>", desc = "Prev Buffer" },
             { "<tab>", "<cmd>BufferLineCycleNext<cr>", desc = "Next Buffer" },
             { "<M-h>", "<cmd>BufferLineMovePrev<cr>", desc = "Move buffer prev" },
@@ -56,7 +56,7 @@ return {
 
     },
 
-    { 'neoclide/coc.nvim', branch = 'release', },
+    -- { 'neoclide/coc.nvim', branch = 'release', },
 
     {
         "lukas-reineke/indent-blankline.nvim",
