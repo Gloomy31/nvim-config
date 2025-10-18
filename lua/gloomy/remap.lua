@@ -1,9 +1,5 @@
 vim.g.mapleader = " "
 
--- Retraining myself to use <C-[> instead of <C-CR> for Esc
-vim.keymap.set("", "<C-CR>", ":h CTRL-[<CR>")
-vim.keymap.set("!", "<C-CR>", "<Esc>:h CTRL-[<CR>")
-
 vim.keymap.set("", "<F2>", vim.cmd.noh)
 vim.keymap.set("n", "<F4>", ":bo term<CR>")
 vim.keymap.set("t", "<F4>", "<C-d>")
