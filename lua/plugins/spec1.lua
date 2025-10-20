@@ -26,7 +26,7 @@ return {
             's1n7ax/nvim-window-picker'
         }
     },
-    
+
     {
         'brianhuster/live-preview.nvim',
         dependencies = {

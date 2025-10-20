@@ -135,6 +135,18 @@ require('lualine').setup {
 
 
 -- neo-tree
+require("neo-tree").setup({
+    event_handlers = {
+        {
+            event = "neo_tree_buffer_enter",
+            handler = function(arg)
+                vim.cmd [[
+                setlocal nu rnu
+                ]]
+            end,
+        }
+    },
+})
 vim.keymap.set("n", "<F3>", ":Neotree toggle=true<CR>")
 
 
