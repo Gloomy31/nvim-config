@@ -47,11 +47,8 @@ return {
             { "<leader>th", "<Cmd>BufferLineCloseLeft<CR>", desc = "Delete Buffers to the Left" },
             { "<S-tab>", "<cmd>BufferLineCyclePrev<cr>", desc = "Prev Buffer" },
             { "<tab>", "<cmd>BufferLineCycleNext<cr>", desc = "Next Buffer" },
-            { "<M-h>", "<cmd>BufferLineMovePrev<cr>", desc = "Move buffer prev" },
-            { "<M-l>", "<cmd>BufferLineMoveNext<cr>", desc = "Move buffer next" },
-            -- I have a quicker mapping now
-            -- { "<leader>h", "<cmd>BufferLineMovePrev<cr>", desc = "Move buffer prev" },
-            -- { "<leader>l", "<cmd>BufferLineMoveNext<cr>", desc = "Move buffer next" },
+            { "<leader>h", "<cmd>BufferLineMovePrev<cr>", desc = "Move buffer prev" },
+            { "<leader>l", "<cmd>BufferLineMoveNext<cr>", desc = "Move buffer next" },
         }
 
     },
