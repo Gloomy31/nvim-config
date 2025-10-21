@@ -65,7 +65,9 @@ vim.keymap.set("", "<leader>s?", "z=")
 -- ...in visualization.
 vim.keymap.set("v", "<leader>cs", ':<BS><BS><BS><BS><BS>%s/\\%V./&/g')
 -- ...in line.
-vim.keymap.set("n", "<leader>cl", '0v$:<BS><BS><BS><BS><BS>%s/\\%V./&/g')
+vim.keymap.set("n", "<leader>cl", '^v$:<BS><BS><BS><BS><BS>%s/\\%V./&/g')
+-- ...in line including starting whitespace (idk why I'd want this, but here it is anyway)
+vim.keymap.set("n", "<leader>c0", '0v$:<BS><BS><BS><BS><BS>%s/\\%V./&/g')
 -- ...in block/paragraph.
 vim.keymap.set("n", "<leader>cb", '{v}:<BS><BS><BS><BS><BS>%s/\\%V./&/g')
 -- ...in file
