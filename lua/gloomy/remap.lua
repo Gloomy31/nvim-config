@@ -60,3 +60,13 @@ vim.keymap.set("", "<leader>sn", "]s")
 vim.keymap.set("", "<leader>sp", "[s")
 vim.keymap.set("", "<leader>sa", "zg")
 vim.keymap.set("", "<leader>s?", "z=")
+
+-- Count characters...
+-- ...in visualization.
+vim.keymap.set("v", "<leader>cs", ':<BS><BS><BS><BS><BS>%s/\\%V./&/g')
+-- ...in line.
+vim.keymap.set("n", "<leader>cl", '0v$:<BS><BS><BS><BS><BS>%s/\\%V./&/g')
+-- ...in block/paragraph.
+vim.keymap.set("n", "<leader>cb", '{v}:<BS><BS><BS><BS><BS>%s/\\%V./&/g')
+-- ...in file
+vim.keymap.set("n", "<leader>cf", 'ggVG:<BS><BS><BS><BS><BS>%s/\\%V./&/g')
