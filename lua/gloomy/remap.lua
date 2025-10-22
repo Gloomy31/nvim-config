@@ -7,6 +7,7 @@ vim.keymap.set("t", "<F4>", "<C-d>")
 vim.keymap.set("n", "<leader>w", vim.cmd.w)
 
 vim.keymap.set("", "0", "^")
+vim.keymap.set("", "<leader>0", "0")
 
 -- Binds I stole from Prime
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
