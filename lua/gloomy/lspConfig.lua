@@ -1,0 +1,9 @@
+-- Mason.nvim/LSPs from Mason
+require("mason").setup()
+vim.lsp.enable('html')
+vim.lsp.enable('cssls')
+vim.lsp.enable('ts_ls')
+vim.lsp.enable("jdtls")
+vim.lsp.enable('jsonls')
+vim.lsp.enable('yamlls')
+vim.lsp.enable('lua_ls')
