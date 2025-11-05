@@ -24,7 +24,12 @@ return {
             'nvim-lua/plenary.nvim',
             'nvim-tree/nvim-web-devicons',
             's1n7ax/nvim-window-picker'
-        }
+        },
+        opts = {
+            filesystem = {
+                hijack_netrw_behavior = "disabled",
+            },
+        },
     },
 
     {
@@ -54,8 +59,6 @@ return {
         }
 
     },
-
-    -- { 'neoclide/coc.nvim', branch = 'release', },
 
     {
         "lukas-reineke/indent-blankline.nvim",
