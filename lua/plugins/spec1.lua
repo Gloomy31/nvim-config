@@ -47,6 +47,8 @@ return {
             { "<leader>th", "<Cmd>BufferLineCloseLeft<CR>", desc = "Delete Buffers to the Left" },
             { "<S-tab>", "<cmd>BufferLineCyclePrev<cr>", desc = "Prev Buffer" },
             { "<tab>", "<cmd>BufferLineCycleNext<cr>", desc = "Next Buffer" },
+            { "H", "<cmd>BufferLineCyclePrev<cr>", desc = "Prev Buffer" },
+            { "L", "<cmd>BufferLineCycleNext<cr>", desc = "Next Buffer" },
             { "<leader>h", "<cmd>BufferLineMovePrev<cr>", desc = "Move buffer prev" },
             { "<leader>l", "<cmd>BufferLineMoveNext<cr>", desc = "Move buffer next" },
         }
