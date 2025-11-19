@@ -152,24 +152,24 @@ vim.keymap.set("n", "<F3>", ":Neotree toggle=true<CR>")
 
 
 -- mini.nvim
--- Text editing
+    -- Text editing
 -- require('mini.ai').setup()
 -- require('mini.keymap').setup()
 require('mini.operators').setup()
 require('mini.pairs').setup()
 require('mini.surround').setup()
 
--- General workflow
+    -- General workflow
 require('mini.basics').setup()
 require('mini.bracketed').setup()
 require('mini.pick').setup()
 
--- Apperance
+    -- Apperance
 require('mini.cursorword').setup()
 require('mini.icons').setup()
 require('mini.statusline').setup()
 
--- Other
+    -- Other
 require('mini.doc').setup()
 
 
@@ -243,3 +243,11 @@ require("image").setup({
     tmux_show_only_in_active_window = false, -- auto show/hide images in the correct Tmux window (needs visual-activity off)
     hijack_file_patterns = { "*.png", "*.jpg", "*.jpeg", "*.gif", "*.webp", "*.avif" }, -- render image files as images when opened
 })
+
+
+-- suda.vim
+vim.cmd([[
+    let g:suda_smart_edit = 1
+]])
+
+vim.keymap.set("n", "<leader>W", vim.cmd.SudaWrite)

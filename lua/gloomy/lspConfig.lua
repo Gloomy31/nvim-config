@@ -9,5 +9,7 @@ vim.lsp.enable('yamlls')
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('clangd')
 vim.lsp.enable('pylsp')
+vim.lsp.enable('rust_analyzer')
+vim.lsp.enable('cmake')
 
 vim.keymap.set("n", "<leader>d", function() vim.diagnostic.open_float() end)
